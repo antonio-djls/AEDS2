@@ -1,4 +1,6 @@
 #include<iostream>
+#include<vector>
+#include<algorithm>
 
 void passar_valor(int argumento){
     argumento =999;
