@@ -1,6 +1,5 @@
 #include<iostream>
 #include<functional>
-
 typedef int(*operacoes)(int,int);
 
 int add(int x, int y){
