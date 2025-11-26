@@ -22,7 +22,6 @@ int main(){
     std::cout << operacao(2,3) << std::endl;
     // std::cout << add(2,3) << std::endl;
     std::cout << multiplicador(2,3) << std::endl;
-
-
+    
     return 0;
 }
