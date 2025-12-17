@@ -57,7 +57,10 @@ class fila{
             cout << "Valor desalocado " << aux->dado << endl;
             delete aux;
         }
-    }
+    };
+    void ver(){
+        cout << "Valor do final da fila (último inserido)"  << inicio->dado << endl;
+    };
 
 
 };
