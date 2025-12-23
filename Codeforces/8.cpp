@@ -1,8 +1,12 @@
-#include<iostream>
-#include<string>
+#include <iostream>
+#include <string>
 using namespace std;
 
-int main(){
-    
-    return 0;
+int main() {
+
+  ll int x{};
+
+  cin >> x;
+
+  return 0;
 }
