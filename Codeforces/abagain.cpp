@@ -7,12 +7,13 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    ll int x{},input{},ans{};  cin >> x;
+    ll int x{},sum{};
+    cin >> x;
+    string a;
     while(x--){
-        cin >> input;
-        ans = input/2;
-        if(input % 2 == 1)ans++;
-        cout << ans << endl;
+        cin >> a; sum = (a[0] - '0') + (a[1]-'0');
+        cout << sum << endl;
     }
+
     return 0;
 }
