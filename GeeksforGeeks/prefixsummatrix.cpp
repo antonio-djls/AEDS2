@@ -12,6 +12,7 @@ vector<vector<int>> prefixosum(vector<vector<int>> array){
     for(int k = 0; k < linha; k++){
         for(int i  = 0; i < columns; i++){
             prefixo[k][i] = array[k][i];
+
             if(k > 0){
                 prefixo[k][i] += prefixo[k-1][i]; //
             }
