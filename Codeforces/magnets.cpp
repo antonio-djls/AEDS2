@@ -1,5 +1,4 @@
 #include <bits/stdc++.h>
-#include <vector>
 #define ll long long
 using namespace std;
 
@@ -10,16 +9,15 @@ int main(){
 
     ll int x{};
     cin >> x;
-    string n1;
-    vector<string> vi;
+    vector<int>input(1000000);
 
-    ll int count{};
-    for(int i  = 0; i < x; i++){
-        cin >> n1;
-        vi.push_back(n1);
-    }
     for(int i = 0; i < x; i++){
-        if(vi[i] == vi[i+1]) count++;
+        cin >> input[i];
+    }
+    int count = 0;
+    for(int i = 0; i < x; i++){
+        if(input[i]!= input[i+1])count++;
+
     }
     cout << count << endl;
     return 0;
