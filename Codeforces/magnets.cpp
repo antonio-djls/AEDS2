@@ -18,7 +18,6 @@ int main(){
     for(int i = 0; i < x; i++){
         if(input[i]!= input[i+1])count++;
 
-    }
-    cout << count << endl;
+    }    cout << count << endl;
     return 0;
 }
