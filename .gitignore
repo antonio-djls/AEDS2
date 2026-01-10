@@ -3,3 +3,5 @@
 *.json
 Lista3/
 .cph/
+.zed/
+.gitignore
