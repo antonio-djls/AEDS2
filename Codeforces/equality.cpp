@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+#include <climits>
 #define ll long long
 using namespace std;
 
@@ -7,22 +8,25 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
+    string input{};int x{}; int tamanho{}; cin >> x; cin >> tamanho; cin >> input;
 
-    ll int x{}; ll int alf{};
+    vector<int> vi;
+    set<int> si;
+    int i = 0;
+    for(int k = 65; k <= (64+tamanho); k++){
+        si.insert(k);
+    }
+    for(int k = 0; k < input.size(); k++){
+        i =  int(input[k]);
+        vi.push_back(i);
+    }
 
-    cin >> x >> alf;
-
-    vector<char> vi;
-
-    char input{};
-
-    ll int ultimo = 0;
-
-    for(ll int k = 0; k < x; k++){        cin >> input;
-        if(vi[ultimo] > input || ultimo == 0){
-            vi.push_back(input); ultimo++;
+    int menor = INT_MAX;
+    for(int num : si){
+        auto ans = count(vi.begin(),vi.end(),num);
+        if(ans < menor){
+            menor = ans;
         }
     }
-    cout << vi.size() << endl;
-    return 0;
-}
+    cout << (menor * tamanho) << endl;
+    return 0;}
