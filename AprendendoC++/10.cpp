@@ -2,6 +2,7 @@
 #include<vector>
 #include<algorithm>
 
+
 void passar_valor(int argumento){
     argumento =999;
 }
@@ -10,6 +11,11 @@ void passar_por_referencia(int& argumento){
     std::cout << "Endereço de Argumento " << &argumento << std::endl;
     argumento = 9999;
 }
+
+int retorno(){
+    std::cout << "Hello world \n" << endl;
+}
+
 
 int main(){
     int argumento{1};
