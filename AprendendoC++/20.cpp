@@ -1,10 +1,9 @@
-#include<iostream>
+
 
 int main(){
     int a{2},b{3};
     // int&& c = a+b;
     int c = a+b;
-    std::cout << "c "  << c << std::endl;
     return 0;
 }
 
